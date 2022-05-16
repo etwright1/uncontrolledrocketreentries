@@ -1,3 +1,7 @@
+#
+# From norabolig (A. Boley)
+# Modifed by etwright1
+#
 import KeplerTools as KT
 import numpy as np
 RE=6378e3 # equatorial radius

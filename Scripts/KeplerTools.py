@@ -14,14 +14,20 @@ def kepResid(ecc,EA,MA):
 def kepResidHyper(ecc,EA,MA):
   return -EA + ecc * np.sinh(EA) - MA
 
-def kepEq(MA,ecc,EA=0,tol=1e-6):
+def kepEq(MA,ecc,EA=0,tol=1e-4):
   MA = MA/(twopi)
   MA = (MA-np.floor(MA))*twopi      # ensures between 0 and 2 pi
   A = kepResid(ecc,EA,MA)
+  iter=0
+  EA=MA*1
+  if ecc>0.8: EA=np.pi*1
   while np.abs(A)>tol:
-      dAdE = 1 - ecc * np.cos(EA)
-      EA = EA - A/dAdE
+      EA = MA + ecc*np.sin(EA)
       A = kepResid(ecc,EA,MA)
+      iter+=1
+      if iter > 1000:
+         print("Convergence issue for MA {} ecc {} EA {} and iter {}".format(MA,ecc,EA,iter))
+         iter=0
   return EA
 
 def kepEqHyper(MA,ecc,EA=0,tol=1e-6):
@@ -70,7 +76,7 @@ def get_dQOs(w0,O,inc):
     Q[2][1] = 0.
     return Q
 
-def getXYZVVV(nu,a,w0,ecc,O,inc,m0,m1,G=6.67e-11):
+def getXYZVVV(nu,a,w0,ecc,O,inc,m0,m1,G=6.6743e-11):
     n = np.sqrt(G*(m0+m1)/a**3)
     r = radial(nu,a,ecc)
     Q = get_Qs(w0,O,inc)

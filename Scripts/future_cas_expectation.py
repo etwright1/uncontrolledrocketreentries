@@ -1,3 +1,8 @@
+# 
+# Code for analysing rocket body reentries
+# by etwright1 (E. Wright), 2022
+#
+
 import numpy as np
 
 RE=6378000 # equatorial radius in m

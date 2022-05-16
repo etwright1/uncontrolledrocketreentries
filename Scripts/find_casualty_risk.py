@@ -1,3 +1,8 @@
+# 
+# Code for analysing rocket body reentries
+# by etwright1 (E. Wright), 2022
+#
+
 import numpy as np
 import matplotlib.pylab as plt
 import casualty as cs

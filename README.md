@@ -14,19 +14,19 @@ This study uses publicly available data from Celestrak and the Center for Intern
 
 The CelesTrak satellite catalogue was accessed on 5 May 2022, and is included in the Input data directory.
 
-Datasets from the Gridded Population of the World 4 (GPWv4) are used for population data, using both 2020 and 2005 values, with half degree (55 km) latitude bins. Specifically, population counts are used, which are then converted to density values. The data are also inlcuded in the Input data directory for convenience. 
+Datasets from the Gridded Population of the World 4 (GPWv4) are used for population data, using both 2020 and 2005 values, with half degree (55 km) latitude bins. Specifically, population counts are used, which are then converted to density values. The data are also included in the Input data directory for convenience. 
 
-T. S. Kelso, Satellite Catalogue, CelesTrak. Accessed 5 May (2022). At: http://celestrak.com/
+T. S. Kelso, Satellite Catalogue, CelesTrak. Accessed 5 May 2022. At: http://celestrak.com/
 
-The Center for International Earth Science Information Network - CIESIN. Gridded Population of the World, Version 4.11 (GPWv4): UN WPP-Adjusted Population Count. Accessed 31 January (2022). At: https://sedac.ciesin.columbia.edu/data/collection/gpw-v4
+The Center for International Earth Science Information Network - CIESIN. Gridded Population of the World, Version 4.11 (GPWv4): UN WPP-Adjusted Population Count. Accessed 31 January 2022. At: https://sedac.ciesin.columbia.edu/data/collection/gpw-v4
 
 # Data values in text
 
-The May 1992-2022 casualty expectation estimate is calculated using 'make_hist_wf_and_cas_exp.py'.
+The May 1992-2022 casualty expectation estimate is calculated using 'make_hist_wf_and_cas_exp.py'
 
-The casualty expectation corresponding to the 651 rocket bodies (RBs) with perigee < 600 km is found using 'find_casualty_risk.py'
+The casualty expectation corresponding to the 651 rocket bodies (RBs) with perigee < 600 km is calculated using 'find_casualty_risk.py'
 
-The casualty expectation corresponding to a 10 year average weighting function is found using 'future_casualty_expectation.py'
+The casualty expectation corresponding to a 10-year average weighting function is calculated using 'future_casualty_expectation.py'
 
 # Plots
 

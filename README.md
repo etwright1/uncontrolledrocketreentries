@@ -10,9 +10,11 @@ Licence (CC BY-SA 4.0): https://creativecommons.org/licenses/by-sa/4.0/
 
 # Data Sources
 
-The Celestrak satellite catalogue was used, taken on 5 May 2022.
+The Celestrak satellite catalogue was used, taken on 5 May 2022. http://celestrak.com/
 
-Gridded Population of the World 4 datasets were used for population data for both 2020 and 2005, with half degree (55 km) latitude bins. Population counts are used, which are then converted to density values.
+Gridded Population of the World 4 datasets were used for population data for both 2020 and 2005, with half degree (55 km) latitude bins. Population counts are used, which are then converted to density values. https://sedac.ciesin.columbia.edu/data/collection/gpw-v4
+
+Center for International Earth Science Information Network - CIESIN. Gridded Population of the World, Version 4.11 (GPWv4): UN WPP-Adjusted Population Count. Accessed 31 January (2022).
 
 # Data values in text
 

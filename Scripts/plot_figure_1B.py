@@ -1,3 +1,8 @@
+# 
+# Code for analysing rocket body reentries
+# by etwright1 (E. Wright), 2022
+#
+
 from matplotlib import pyplot as plt
 
 fig = plt.figure(figsize=(2.375, 2.375), dpi=300)

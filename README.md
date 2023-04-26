@@ -2,7 +2,7 @@
 
 This repository contains the data and code used in the paper 'Unnecessary risks created by uncontrolled rocket reentries', Nature Astronomy, Analysis (2022) by Michael Byers, Ewan Wright, Aaron Boley, and Cameron Byers.
 
-It is provided for independent assessment. If you use information provided here, please cite the 2022 paper (LINK FORTHCOMING).
+It is provided for independent assessment. If you use information provided here, please cite the 2022 paper: https://www.nature.com/articles/s41550-022-01718-8.
 
 The method of calculating weighting functions and casualty expectation is described in the main text of the paper.
 
